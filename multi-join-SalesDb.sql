@@ -6,3 +6,5 @@ o2.Quantity * o2.Price 'LineTotal'
 	on o.CustomerId = c.Id
 	join OrderLines o2
 	on o.Id = o2.OrdersId
+	where o2.Product = 'Tablet'
+	order by c.name
