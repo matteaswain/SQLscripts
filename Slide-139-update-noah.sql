@@ -27,6 +27,3 @@ delete
 		where Firstname = 'Noah';
 /*
 
-
-
-
