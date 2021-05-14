@@ -1,4 +1,5 @@
 --create our own database
+/*
 use master;
 create database Bootcamp;
 
@@ -22,3 +23,31 @@ create table Assessments
 						Score int not null, 
 									
 		);
+
+
+create table Customers
+	(Id int primary key identity(1,1),
+		Code varchar(10) not null Unique,
+			Name varchar(30) not null,
+				Sales decimal(9,2) not null default(0) Check (Sales >=0),
+					Active bit not null Default 1,
+						Created datetime not null default getdate()
+		);
+
+
+insert into Customers
+	(Code, Name)
+	values ('TQL', 'Total Quality Logistics');
+
+
+insert into Customers 
+	(Code, Name)
+		values ('USB', 'United States Bakery');
+
+
+
+insert into Customers
+	(Code, Name)
+		values ('MAX', 'Max Technical Training');
+*/
+
