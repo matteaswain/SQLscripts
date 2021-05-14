@@ -49,5 +49,13 @@ insert into Customers
 insert into Customers
 	(Code, Name)
 		values ('MAX', 'Max Technical Training');
+
+
+alter table Customers
+	add Updated datetime null;
+
+
+alter table Customers
+	alter column name varchar(50) not null;
 */
 

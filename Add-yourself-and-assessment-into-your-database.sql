@@ -1,5 +1,5 @@
 -- add yourself and assessment into your database
-
+/*
 insert into Students
 	(Firstname, Lastname, Address, City, State, Zip, AssessmentScore)
 		values 
@@ -20,3 +20,5 @@ select s.Firstname,s.Lastname,s.Address,s.City,s.State,
 		from Students s
 			join Assessments a
 				on s.Id = a.StudentId;
+*/
+
