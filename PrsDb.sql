@@ -120,7 +120,7 @@ insert into Products
 	(PartNbr,Name,Price,VendorId)
 		values ('WBC','Webcam',79.99,2);
 
-*/
+
 
 select * from Users
 
@@ -131,3 +131,6 @@ select * from Vendors
 select * from Requests
 
 select * from RequestLines
+
+*/
+insert into RequestLines
