@@ -1,5 +1,5 @@
 --create PRSDb and insert the data
-
+/*
 use master;
 
 drop database if exists PrsDb
@@ -9,6 +9,8 @@ create database PrsDb;
 
 
 use PrsDb;
+
+
 
 create table Users
 	(Id int primary key identity (1,1),
@@ -43,7 +45,7 @@ create table Products
 				Price decimal(9,2) default 0,
 					Unit varchar(30) not null default 'Each',
 						PhotoPath varchar(255) null,
-							VendorId int not null foreign key references Vendors(Id) 
+							VendorId int not null foreign key references Vendors(Id)
 	);
 
 create table Requests
@@ -97,5 +99,25 @@ insert into Vendors
 
 insert into Products
 	(PartNbr, Name, Price, VendorId)
-		values('PPR','Paper', 1.99, 1); 
-Go
+		values('PPR','Paper', 1.99,1); 
+
+insert into Products
+	(PartNbr, Name, Price, VendorId)
+		values('BPK','Backpack', 9.99,2);
+
+
+insert into Products
+	(PartNbr,Name,Price,VendorId)
+		values ('LAP','Laptop',199.99,(select v.Name from Vendors v
+			where v.Name = 'Amazon');
+
+insert into Products
+	(PartNbr,Name,Price,VendorId)
+		values ('WTR','Water',3.98,1);
+
+
+insert into Products
+	(PartNbr,Name,Price,VendorId)
+		values ('WBC','Webcam',79.99,2);
+
+*/
