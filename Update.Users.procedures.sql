@@ -37,7 +37,7 @@ return 0;
 end
 go 
 
-exec UpdateUser 5,Salamander,SalPal21,Sal,Joe,null,'salpal21@fakeemail.com',0,0;
+exec UpdateUser 6,Salamander,SalPal21,Sal,Joe,null,'salpal21@fakeemail.com',0,0;
 
 select * from Users
 
