@@ -121,3 +121,13 @@ insert into Products
 		values ('WBC','Webcam',79.99,2);
 
 */
+
+select * from Users
+
+select * from Products
+
+select * from Vendors
+
+select * from Requests
+
+select * from RequestLines
