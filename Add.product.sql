@@ -25,3 +25,5 @@ end
 end
 go
 exec AddProduct 'WTH','Watch',199.99,'Each',null,'Amazon'
+
+select * from Products
