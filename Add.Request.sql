@@ -26,5 +26,5 @@ go
 
 exec AddRequest 'Staples','Im out of staples!','Pick up','New',2.99,'Admin';
 
-select * from Requests
+
 
